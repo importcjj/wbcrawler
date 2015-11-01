@@ -164,12 +164,3 @@ class WeiboLoginer(object):
         re_id = re.compile(r"\['page_id'\]='(.+?)'")
         _id = re_id.findall(html)[0]
         return _id
-
-
-if __name__ == '__main__':
-    wbl = WeiboLoginer('18362976187', '7895123')
-    wbl.easy_login()
-    cookies = wbl.cookie
-    cookies.save('1.txt')
-    # login_sina('1939249931@qq.com', '1993lgq1023@tq!')
-    # login_sina('762485264@qq.com','DuHao@931018')
