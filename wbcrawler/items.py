@@ -21,3 +21,4 @@ class WeiboCard(scrapy.Item):
     wb_images = scrapy.Field()
     wb_coordinate = scrapy.Field()
     wb_location = scrapy.Field()
+    wb_location_url = scrapy.Field()
